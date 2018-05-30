@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		699FC38120BEA00600332946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FC38020BEA00600332946 /* AppDelegate.swift */; };
-		699FC38320BEA00600332946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FC38220BEA00600332946 /* ViewController.swift */; };
+		699FC38320BEA00600332946 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FC38220BEA00600332946 /* PeripheralViewController.swift */; };
 		699FC38620BEA00600332946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699FC38420BEA00600332946 /* Main.storyboard */; };
 		699FC38820BEA00600332946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699FC38720BEA00600332946 /* Assets.xcassets */; };
 		699FC38B20BEA00600332946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699FC38920BEA00600332946 /* LaunchScreen.storyboard */; };
 		699FC39620BEA00600332946 /* Peripheral01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FC39520BEA00600332946 /* Peripheral01Tests.swift */; };
 		699FC3A120BEA00600332946 /* Peripheral01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FC3A020BEA00600332946 /* Peripheral01UITests.swift */; };
+		699FC3AF20BEA40C00332946 /* TransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FC3AE20BEA40C00332946 /* TransferService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		699FC37D20BEA00600332946 /* Peripheral01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peripheral01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699FC38020BEA00600332946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		699FC38220BEA00600332946 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		699FC38220BEA00600332946 /* PeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
 		699FC38520BEA00600332946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		699FC38720BEA00600332946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		699FC38A20BEA00600332946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		699FC39C20BEA00600332946 /* Peripheral01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Peripheral01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		699FC3A020BEA00600332946 /* Peripheral01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peripheral01UITests.swift; sourceTree = "<group>"; };
 		699FC3A220BEA00600332946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		699FC3AE20BEA40C00332946 /* TransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				699FC38020BEA00600332946 /* AppDelegate.swift */,
-				699FC38220BEA00600332946 /* ViewController.swift */,
+				699FC38220BEA00600332946 /* PeripheralViewController.swift */,
+				699FC3AE20BEA40C00332946 /* TransferService.swift */,
 				699FC38420BEA00600332946 /* Main.storyboard */,
 				699FC38720BEA00600332946 /* Assets.xcassets */,
 				699FC38920BEA00600332946 /* LaunchScreen.storyboard */,
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				699FC38320BEA00600332946 /* ViewController.swift in Sources */,
+				699FC3AF20BEA40C00332946 /* TransferService.swift in Sources */,
+				699FC38320BEA00600332946 /* PeripheralViewController.swift in Sources */,
 				699FC38120BEA00600332946 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

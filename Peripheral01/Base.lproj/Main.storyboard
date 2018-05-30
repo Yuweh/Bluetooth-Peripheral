@@ -1,24 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="twd-Fz-op0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Peripheral View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="PeripheralViewController" customModule="Peripheral01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s8E-Yl-dAu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advertise Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9L-Uq-jII">
+                                <rect key="frame" x="75" y="101" width="224" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVw-1o-Kfg">
+                                <rect key="frame" x="128" y="146.5" width="119" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fKF-iN-mQE">
+                                <rect key="frame" x="16" y="258" width="343" height="367"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="IYI-O1-WRe"/>
+                                    <constraint firstAttribute="height" constant="367" id="vs6-aE-Ph1"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stG-PV-Zhu">
+                                <rect key="frame" x="163" y="198" width="51" height="31"/>
+                                <connections>
+                                    <action selector="advertiseSwitchMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rof-Af-q3K"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fKF-iN-mQE" firstAttribute="leading" secondItem="I8U-aq-VTF" secondAttribute="leading" constant="16" id="08d-6l-ehN"/>
+                            <constraint firstItem="I8U-aq-VTF" firstAttribute="trailing" secondItem="R9L-Uq-jII" secondAttribute="trailing" constant="76" id="Ef4-ez-O4L"/>
+                            <constraint firstItem="I8U-aq-VTF" firstAttribute="trailing" secondItem="stG-PV-Zhu" secondAttribute="trailing" constant="163" id="F98-Zs-d3A"/>
+                            <constraint firstItem="R9L-Uq-jII" firstAttribute="leading" secondItem="I8U-aq-VTF" secondAttribute="leading" constant="75" id="H0W-f1-LyG"/>
+                            <constraint firstItem="stG-PV-Zhu" firstAttribute="centerX" secondItem="s8E-Yl-dAu" secondAttribute="centerX" id="Jml-En-31i"/>
+                            <constraint firstItem="DVw-1o-Kfg" firstAttribute="leading" secondItem="I8U-aq-VTF" secondAttribute="leading" constant="128" id="Kdi-ww-ScD"/>
+                            <constraint firstItem="DVw-1o-Kfg" firstAttribute="top" secondItem="R9L-Uq-jII" secondAttribute="bottom" constant="18.5" id="P7K-A0-ZXG"/>
+                            <constraint firstItem="I8U-aq-VTF" firstAttribute="trailing" secondItem="DVw-1o-Kfg" secondAttribute="trailing" constant="128" id="TUb-Ov-YuW"/>
+                            <constraint firstItem="I8U-aq-VTF" firstAttribute="bottom" secondItem="fKF-iN-mQE" secondAttribute="bottom" constant="42" id="be7-PJ-vio"/>
+                            <constraint firstItem="stG-PV-Zhu" firstAttribute="top" secondItem="DVw-1o-Kfg" secondAttribute="bottom" constant="28.5" id="fzL-om-M6x"/>
+                            <constraint firstItem="R9L-Uq-jII" firstAttribute="top" secondItem="I8U-aq-VTF" secondAttribute="top" constant="37" id="j3E-Gq-3gH"/>
+                            <constraint firstItem="I8U-aq-VTF" firstAttribute="trailing" secondItem="fKF-iN-mQE" secondAttribute="trailing" constant="16" id="vf8-tI-flg"/>
+                            <constraint firstItem="stG-PV-Zhu" firstAttribute="leading" secondItem="I8U-aq-VTF" secondAttribute="leading" constant="163" id="zMN-X7-G4i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I8U-aq-VTF"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xJf-ch-fHD"/>
+                    <connections>
+                        <outlet property="advertiseSwitch" destination="stG-PV-Zhu" id="9X7-Gh-oGj"/>
+                        <outlet property="bluetoothSwitchLabel" destination="DVw-1o-Kfg" id="eGi-hh-GfR"/>
+                        <outlet property="mainTextLabel" destination="R9L-Uq-jII" id="xSK-I1-knh"/>
+                        <outlet property="textView" destination="fKF-iN-mQE" id="J9l-c0-SVS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="124" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FN3-e0-4M3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="twd-Fz-op0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dtm-NX-k1f">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z5i-MR-CHo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Saj-dk-3vG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-614" y="139"/>
         </scene>
     </scenes>
 </document>
